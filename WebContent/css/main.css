@@ -1,0 +1,133 @@
+body{
+    margin:0;
+    padding:0;
+    background:black;
+    color:white;
+}
+#fps {
+    position:absolute;
+    top:3px;
+    right:3px;
+    font: 12px "Courier", "Monaco", Verdana, sans-serif;
+    color:white;
+    z-index:100000000;
+}
+
+a:link {
+    color:white;
+    text-decoration:underline;
+}
+
+a:visited {
+    color:#aaa;
+    text-decoration:underline;
+}
+
+#tier {
+    position:absolute;
+    top:3px;
+    left:3px;
+    font: 12px "Courier", "Monaco", Verdana, sans-serif;
+    color:white;
+    z-index:100000000;
+}
+#canvasContainer{
+    position:fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    overflow: hidden;
+}
+#playField{
+    position:absolute;
+}
+#chargeBars,#healthBarContainer{
+    z-index:100000000;
+    
+    width:20%;
+    height:.5em;
+    position:absolute;
+    left:40%;
+    right:auto;
+    overflow:hidden;
+}
+#healthBarContainer{top:.5em;border-top:1px solid #333;}
+.progressBar {
+    position:absolute;
+    left:0px;
+    height:100%;
+}
+.backgroundBar {
+    width:100%;
+    background:#888;
+}
+#electricCharge{background:#0af;}
+#minimumCharge{background:#058;opacity:0;}
+#weaponCharge{background:#f00;}
+#playerHealth{background:#0f0;}
+
+.overlay{
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    margin:0px;
+    padding:0px;
+    background:rgba(0,0,0,.7);
+    opacity:0;
+}
+
+#help {
+    padding:100px 30% 0;
+}
+
+#pauseScreen{
+    display:none;
+    padding-top:50px;
+    font-size:125px;
+    font-variant:small-caps;
+    text-align:center;
+}
+
+#firstLaunch{
+    opacity: 1 !important;
+    padding:50px 30%;
+}
+
+#firstLaunch p{
+    clear:both;
+}
+
+#firstLaunch h2{
+    clear:both;
+}
+
+.browser{
+
+}
+
+.browser div{
+    float:left;
+    width:128px;
+    overflow:hidden;
+    position:relative;
+    padding:0px 3px;
+}
+
+.browser img{
+    width:128px;
+    height:128px;
+    float:left;
+}
+
+.browser p{
+    width:128px;
+    background:#333;
+    float:left;
+    display:block;
+    text-align:center;
+    clear:none;
+    -webkit-border-radius:.5em;
+}

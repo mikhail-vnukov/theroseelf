@@ -1,0 +1,1 @@
+var CharacterTest = TestCase("CharacterTest");
